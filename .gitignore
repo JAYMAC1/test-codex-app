@@ -1,9 +1,9 @@
-# Dependencies
+# deps
 node_modules/
 client/node_modules/
 server/node_modules/
 
-# Builds & caches
+# builds & caches
 dist/
 build/
 client/dist/
@@ -15,16 +15,16 @@ coverage/
 .vercel/
 .eslintcache
 
-# Logs / OS
+# logs / OS
 *.log
 .DS_Store
 
-# Environment
+# env
 .env
 .env.*
 !.env.example
 
-# Uploads or generated media
+# uploads or generated media
 uploads/
 server/uploads/
 client/public/uploads/
