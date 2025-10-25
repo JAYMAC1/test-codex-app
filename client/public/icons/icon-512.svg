@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#gradient)" />
+  <g fill="#FFFFFF" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600">
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="192">CC</text>
+    <text x="50%" y="72%" dominant-baseline="middle" text-anchor="middle" font-size="64">connected</text>
+  </g>
+</svg>

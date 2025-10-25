@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Builds & caches
+dist/
+build/
+client/dist/
+server/dist/
+.next/
+out/
+.vite/
+coverage/
+.vercel/
+.eslintcache
+
+# Logs / OS
+*.log
+.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Uploads or generated media
+uploads/
+server/uploads/
+client/public/uploads/
