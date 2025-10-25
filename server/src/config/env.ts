@@ -8,4 +8,6 @@ export const env = {
   jwtSecret: process.env.JWT_SECRET || "dev-secret",
   resendApiKey: process.env.RESEND_API_KEY,
   emailFrom: process.env.EMAIL_FROM || "ConnectedCommunity <no-reply@connectedcommunity.uk>",
+  mongodbUri: process.env.MONGODB_URI,
+  mongodbDbName: process.env.MONGODB_DBNAME || "connectedcommunity_mvp2",
 };
