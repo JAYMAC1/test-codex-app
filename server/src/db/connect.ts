@@ -1,8 +1,11 @@
 import mongoose from "mongoose";
+import { env } from "../config/env.js";
 
 export async function connectDB() {
-  const uri = process.env.MONGODB_URI!;
-  const dbName = process.env.MONGODB_DBNAME || "connectedcommunity_mvp2";
-  await mongoose.connect(uri, { dbName });
-  console.log("✅ Mongo connected to DB:", dbName);
+  if (!env.mongodbUri) {
+    throw new Error("Missing MongoDB connection string. Set the MONGODB_URI environment variable.");
+  }
+
+  await mongoose.connect(env.mongodbUri, { dbName: env.mongodbDbName });
+  console.log("✅ Mongo connected to DB:", env.mongodbDbName);
 }
