@@ -23,6 +23,7 @@ coverage/
 .env
 .env.*
 !.env.example
+!server/.env
 
 # uploads or generated media
 uploads/
