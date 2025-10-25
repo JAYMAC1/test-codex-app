@@ -31,7 +31,27 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
-        navigateFallback: "/offline.html",
+        navigateFallback: "/index.html",
+        runtimeCaching: [
+          {
+            urlPattern: ({ request }) => request.mode === "navigate",
+            handler: "NetworkFirst",
+            options: {
+              cacheName: "pages",
+              networkTimeoutSeconds: 5,
+              plugins: [
+                {
+                  cacheKeyWillBeUsed: async ({ request }) => request.url,
+                },
+                {
+                  handlerDidError: async () => {
+                    return await caches.match("/offline.html");
+                  },
+                },
+              ],
+            },
+          },
+        ],
       },
       devOptions: {
         enabled: true,
