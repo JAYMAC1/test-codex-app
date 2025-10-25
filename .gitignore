@@ -1,0 +1,30 @@
+# deps
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# builds & caches
+dist/
+build/
+client/dist/
+server/dist/
+.next/
+out/
+.vite/
+coverage/
+.vercel/
+.eslintcache
+
+# logs / OS
+*.log
+.DS_Store
+
+# env
+.env
+.env.*
+!.env.example
+
+# uploads or generated media
+uploads/
+server/uploads/
+client/public/uploads/
