@@ -14,6 +14,7 @@ out/
 coverage/
 .vercel/
 .eslintcache
+package-lock.json
 
 # logs / OS
 *.log
